@@ -17,12 +17,13 @@ const taskKey = datastore.key([kind, name]);
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (rbeq, res) => {
-  res.sendFile(path.join(__dirname, '/views/form.html'));
-});
+// view engine setup
+app.set('views', __dirname + '/views');
+app.set('view engine', 'html');
+app.engine('html', require('ejs').renderFile);
 
-app.get('/done', (req, res) => {
-  res.sendFile(path.join(__dirname, '/views/done.html'));
+app.get('/', (req, res) => {
+  res.render('form.html')
 });
 
 app.post('/submit', (req, res) => {
@@ -45,7 +46,7 @@ app.post('/submit', (req, res) => {
     email: req.body.email
   });
 
-  res.redirect('/done');
+  res.render('done.ejs', {email: req.body.email});
 });
 
 // Listen to the App Engine-specified port, or 8080 otherwise
