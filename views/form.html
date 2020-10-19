@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>これはヘッダーです</header>
+    <div class="Form_body">
+      <h1>回答フォーム</h1>
+          <form method="POST" action="/submit">
+              <p>下記のフォームに回答してください</p>
+              <div class="item">
+                  <label class="label">
+                      Name<br/>
+                      <input id="name" name="name" type="text" required/>
+                  </label>
+              </div>
+              <div class="item">
+                  <label class="label">
+                      School<br/>
+                      <input name="school" type="text" required/>
+                  </label>
+              </div>
+              <div class="item">
+                  <label class="label">
+                      Email<br/>
+                      <input name="email" type="text" required/>
+                  </label>
+              </div>
+              <div class="item no-label">
+                  <input type="submit" value="Submit" />
+              </div>
+          </form>
+      </div>
+      <footer>これはフッターです</footer>
+  </body>
+</html>
