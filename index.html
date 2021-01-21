@@ -12,8 +12,8 @@
 <body>
 
     <header>
-        <img src="img/plustic2020_logo.jpg" height="40">
-        <p>予約/Reservation</p>
+        <img src="img/plustic2020_logo.jpg">
+        <a class="page-type" href="#scrollpoint">予約/Reservation</a>
     </header>
 
     <section class="title">
@@ -46,40 +46,40 @@
                 </section>
             </div>
 
-            <section class="info">
-                <div style="margin-bottom: 30px;">
-                    <h1 style="font-size: 35px; font-weight: normal;">開催日時</h1>
-                    <h2 style="color:#686868;">Date of the event</h2>
+            <section class="info" id="scrollpoint">
+                <div class="block1">
+                    <h1>開催日時</h1>
+                    <h2>Date of the event</h2>
                 </div>
-                <div>
-                    <h1 style="font-size: 40px;">2020/11/19(thu)14:00~16:00</h1>
-                    <h2 style="font-weight: normal;">オンライン開催|参加無料|定員1000名</h2>
-                    <h2 style="color:#686868;">Held Online | Free | Capacity 1000 people</h3>
+                <div class="block2">
+                    <h1>2020/11/19(thu)14:00~16:00</h1>
+                    <h2>オンライン開催|参加無料|定員1000名</h2>
+                    <h3>Held Online | Free | Capacity 1000 people</h3>
                 </div>
             </section>
 
             <section class="rev-form">
                 <div class="text">
-                    <h1 style="font-size: 35px; margin-bottom: 10px;">予約/Reservation</h1>
-                    <h2 style="font-size: 15px;">以下のフォームに回答してください。</h2>
-                    <h2 style="font-size: 15px;">Please fill out the form below.</h2>
+                    <h1>予約/Reservation</h1>
+                    <h2>以下のフォームに回答してください。</h2>
+                    <h2>Please fill out the form below.</h2>
                 </div>
-                <form action="" method="get">
+                <form method="POST" action="/submit">
                     <div class="form-item">
                         <label for="name"><p>氏名/Name</p></label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-item">
                         <label for="school"><p>所属/School</p></label>
-                        <input type="text" id="school">
+                        <input type="text" id="school" name="school" required>
                     </div>
                     <div class="form-item">
                         <label for="year"><p>学年/School year</p></label>
-                        <input type="text" id="year">
+                        <input type="text" id="year" name="year">
                     </div>
                     <div class="form-item">
                         <label for="mail"><p>メール/Mail</p></label>
-                        <input type="text" id="mail">
+                        <input type="text" id="mail" name="mail" required>
                     </div>
                     <div class="form-submit">
                         <input type="submit" value="予約する/Reserve">
@@ -89,12 +89,12 @@
 
             <section class="prof">
                 <div class="title">
-                    <h2 style="font-size: 15px; margin-bottom: 15px;">建築家/Architect</h2>
-                    <h1 style="font-size: 30px;">西沢立衛</h1>
-                    <h2 style="font-size: 15px;">Nishizawa Ryue</h2>
+                    <h2 style="margin-bottom: 10px;">建築家/Architect</h2>
+                    <h1>西沢立衛</h1>
+                    <h2>Nishizawa Ryue</h2>
                 </div>
                 <div class="content">
-                    <img src="img/pic1.jpg" height="200">
+                    <img src="img/pic1.jpg">
                     <div class="text">
                         <p>1988 年横浜国立大学工学部建築学科卒業。1990 年横浜国立大学大学院工学研究科計画建設学専攻修士課程修了。1995 年に妹島和世と共に ( 有 )SANAA を設立。</p>
                         <p>1997 年に ( 有 ) 西沢立衛建築設計事務所を設立。現在、日本建築学会賞作品部門審査員、横浜国立大学大学院 Y-GSA 教授。</p>
@@ -107,8 +107,8 @@
 
             <section class="history">
                 <div class="title">
-                    <h2 style="font-size: 15px; margin-bottom: 15px;">plustic講演会</h2>
-                    <h1 style="font-size: 30px;">過去講演者</h1>
+                    <h2 style="margin-bottom: 10px;">plustic講演会</h2>
+                    <h1>過去講演者</h1>
                 </div>
                 <div class="content">
                     <div class="item">
@@ -161,7 +161,7 @@
 
             <section class="about">
                 <h1>Plusticについて</h1>
-                <div>
+                <div style="font-size: 13px;">
                     <p class="symbol">概要</p>
                     <p>愛知県を中心とし、近隣の建築学生の学生をはじめ建築関係の会社、建築家が日本や世界に触れ、様々なジャンルの発見や勉強のきっかけとなるレクチャーやワークショップなど併用した企画を 開催する。以下を目的とする。</p>
                     <ol　type="1">
@@ -171,28 +171,51 @@
                         <li>学生主体で企画を接続していくことで、社会進出への基礎を学びながら、東海地方全体での学生の意欲を向上させる。</li>
                     </ol>
                 </div>
-                <div>
+                <div style="font-size: 13px;">
                     <p class="symbol">企画内容</p>
                     <p>愛知工業大学、名古屋工業大学、愛知産業大学、大同大学、名古屋造形大学で執り行う当企画は今年で6回目となる。建築学生はこれから建築業界に関わる一員として、現在活動されている建築 家の声に積極的に耳を傾けるとともに、社会の流れと建築の関係について考え、能動的に語り合っていくべきである。</p>
                 </div>
             </section>
 
         </main>
-
         <nav></nav>
-
         <aside></aside>
 
     </div>
     <footer>
         <div class="logo">
-            <img src="img/footer/logo1.png" height="40">
-            <img src="img/footer/logo2.png" height="40">
-            <img src="img/footer/logo3.png" height="40">
+            <img src="img/footer/logo1.png" height="20">
+            <img src="img/footer/logo2.png" height="20">
+            <img src="img/footer/logo3.png" height="20">
         </div> 
         <div>
             <p>協賛企業:総合資格学院|シービーリサーチ|生和コーポレーション</p>
         </div>
     </footer>
+
+    <script type="module">
+        /*import smoothscroll from '/node_modules/smoothscroll-polyfill';
+        smoothscroll.polyfill();*/
+        document.addEventListener("click", e => {
+            const target = e.target;
+            // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
+            if (!target.classList.contains("page-type")) return;
+            e.preventDefault();
+            const targetId = target.hash;
+            const targetElement = document.querySelector(targetId);
+            // 画面上部から要素までの距離
+            const rectTop = targetElement.getBoundingClientRect().top;
+            // 現在のスクロール距離
+            const offsetTop = window.pageYOffset;
+            // スクロール位置に持たせるバッファ
+            const buffer = 50;
+            const top = rectTop + offsetTop - buffer;
+
+            window.scrollTo({
+                top,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
 </html>

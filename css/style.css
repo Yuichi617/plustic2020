@@ -13,51 +13,52 @@ body{
 
 header {
     display: flex;
-    height: 80px;
-    border-bottom: #686868 solid 1px;
-    margin-bottom: 30px;
+    height: 60px;
+    border-bottom: 1px dashed #494949;
+    margin-bottom: 20px;
 }
 
 header img {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 10px;
 }
 
-header p {
+header a {
     display: inline;
-    font-size: 15px;
+    font-size: 10px;
     color: #fff;
     background: #a7a7a7;
-    line-height: 45px;
+    line-height: 30px;
     letter-spacing: .1em;
     margin-left: auto;
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 15px;
-    padding: 0 30px;
+    padding: 0 20px;
     border-radius: 10px;
 }
 
 /*main****************************/
 
 .title {
+    font-family: "YuMincho";
     text-align: center;
     margin-bottom: 30px;
 }
 
 .title h3 {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: normal;
 }
 
 .title h1 {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: normal;
 }
 
 main {
-    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -74,31 +75,74 @@ main {
 }
 
 .image .text {
-    font-size: 13px;
+    font-size: 10px;
     text-align: right;
     font-weight: bold;
     color: #686868;
 }
 
 .image:nth-child(3) {
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 }
 
 .info {
+    font-family: "YuMincho";
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+.info .block1 {
+    margin-bottom: 20px;
+}
+
+.info .block1 h1 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.info .block1 h2 {
+    font-size: 15px;
+    color:#686868;
+}
+
+.info .block2 h1{
+    font-size: 30px;
+}
+
+.info .block2 h2{
+    font-size: 15px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.info .block2 h3{
+    font-size: 13px;
+    color:#686868;
 }
 
 .rev-form {
+    width: 500px;
+    margin: 0 auto;
     text-align: center;
     border: 1px solid #000;
     border-radius: 20px;
-    margin: 0 120px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .rev-form>.text {
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.rev-form .text h1 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.rev-form .text h2 {
+    font-size: 10px;
+    font-weight: normal;
 }
 
 .form-item {
@@ -106,23 +150,23 @@ main {
 }
 
 .form-item p{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .form-item input[type="text"] {
-    font-size: 25px;
-    padding:10px 0;
+    font-size: 20px;
+    padding:5px;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .form-submit {
     margin-top: 40px;
-    margin-bottom: 50px;
-    font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .form-submit input[type="submit"] {
+    font-size: 10px;
     padding: 10px 20px;
     border: 1px solid #000;
     border-radius: 10px;
@@ -131,7 +175,7 @@ main {
 
 .prof {
     margin: 0 40px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .prof .title {
@@ -139,6 +183,15 @@ main {
     margin-bottom: 15px;
     background: #9e9e9e;
     padding: 15px 0;
+    color: #fff;
+}
+
+.prof .title h1 {
+    font-size: 20px;
+}
+
+.prof .title h2 {
+    font-size: 10px; 
 }
 
 .prof .content {
@@ -148,12 +201,13 @@ main {
 }
 
 .prof .content img {
+    height:150px;
     margin-bottom: 20px;
 }
 
 .prof .content .text {
     text-align: left;
-    font-size: 18px;
+    font-size: 13px;
     margin: 0 15px;
 }
 
@@ -163,7 +217,7 @@ main {
 
 .history {
     margin: 0 40px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .history .title {
@@ -171,6 +225,15 @@ main {
     margin-bottom: 25px;
     background: #9e9e9e;
     padding: 15px 0;
+    color: #fff;
+}
+
+.history .title h1 {
+    font-size: 20px;
+}
+
+.history .title h2 {
+    font-size: 10px;
 }
 
 .history .content .item {
@@ -181,7 +244,7 @@ main {
 .history .content .item > h1 {
     margin-bottom: 5px;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .history .content .item .text {
@@ -193,18 +256,23 @@ main {
 .history .content .item .text h1 {
     margin-top: 10px;
     margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.history .content .item .text p {
+    font-size: 13px;
 }
 
 .about {
-    background: #cecece;
+    background: #f5f5f5;
     margin: 0 40px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding: 30px 40px;
 }
 
 .about > h1 {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .about > div {
@@ -227,11 +295,20 @@ footer {
     padding: 20px 0;
 }
 
+footer p {
+    font-size: 10px;
+}
+
 /* /////////////////////////////////// */
 /*PC表示****::::*************************/
 /* /////////////////////////////////// */
 
 @media (min-width:768px) {
+    .title {
+        border-bottom: 1px solid rgb(184, 183, 183);
+        padding-bottom: 20px;
+    }
+
     .main-container {
         display: flex;
     }
@@ -243,22 +320,43 @@ footer {
     .main-container nav {
         display: block;
         order: -1;
-        width: 100px;
+        width: 10%;
     }
     
-    aside {
+    .main-container aside {
         display: block;
-        width: 100px;
+        width: 10%;
+    }
+
+    .image-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .rev-form {
+        width: 500px;
+    }
+
+    .prof {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .prof .content {
         display: flex;
+        align-items: center;
     }
 
     .prof .content img {
-        margin-top: 20px;
         margin-left: 15px;
         margin-right: 10px;
+        margin-top: 20px;
+        height: 150px;
+    }
+
+    .history {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .history .content {
@@ -278,6 +376,11 @@ footer {
     .history .content .item .text {
         background: #cecece;
         flex: 1;
+    }
+
+    .about {
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
