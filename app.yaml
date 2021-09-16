@@ -1,1 +1,4 @@
 runtime: nodejs12
+env_variables:
+  SENDGRID_API_KEY: "SG.Gew8yTHqSk-0sQeHy3_NRA.mtjy4nBFA-oeshCHAj_mZ-7ok7S70hwjU7qQauaawHo"
+  SENDGRID_SENDER: "secretplustic2020@gmail.com"

@@ -1,39 +1,221 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="ja">
+<head>
     <meta charset="utf-8">
-    <title>Form</title>
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
-    <header>これはヘッダーです</header>
-    <div class="Form_body">
-      <h1>回答フォーム</h1>
-          <form method="POST" action="/submit">
-              <p>下記のフォームに回答してください</p>
-              <div class="item">
-                  <label class="label">
-                      Name<br/>
-                      <input id="name" name="name" type="text" required/>
-                  </label>
-              </div>
-              <div class="item">
-                  <label class="label">
-                      School<br/>
-                      <input name="school" type="text" required/>
-                  </label>
-              </div>
-              <div class="item">
-                  <label class="label">
-                      Email<br/>
-                      <input name="email" type="text" required/>
-                  </label>
-              </div>
-              <div class="item no-label">
-                  <input type="submit" value="Submit" />
-              </div>
-          </form>
-      </div>
-      <footer>これはフッターです</footer>
-  </body>
+    <title>西沢立衛講演会</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/plustic2020_logo.jpg">
+        <a class="page-type" href="#scrollpoint">予約/Reservation</a>
+    </header>
+
+    <section class="title">
+        <h3>plustic2020</h3>
+        <h1>西沢立衛講演会</h1>
+    </section>
+
+    <div class="main-container">
+
+        <main>
+
+            <div class="image-container">
+                <section class="image">
+                    <img src="img/main1.jpg">
+                    <div class="text">
+                        <p>Teshima Art Museum</p>
+                        <p>Rei Natio: Matrix, 2010</p>
+                        <p>Photo: Noboru Morikawa</p>
+                    </div>
+                </section>
+                <section class="image">
+                    <img src="img/main_text2.png">
+                </section>
+                <section class="image">
+                    <img src="img/main2.jpg">
+                    <div class="text">
+                        <p>Louver Lens</p>
+                        <p>Photo: Louver Lens c Kazuyo + Ryue Nishizawa / SANAA, IMERY CULBERT, Mosbach paysagisters</p>
+                    </div>
+                </section>
+            </div>
+
+            <section class="info" id="scrollpoint">
+                <div class="block1">
+                    <h1>開催日時</h1>
+                    <h2>Date of the event</h2>
+                </div>
+                <div class="block2">
+                    <h1>2020/11/19(thu)14:00~16:00</h1>
+                    <h2>オンライン開催|参加無料|定員1000名</h2>
+                    <h3>Held Online | Free | Capacity 1000 people</h3>
+                </div>
+            </section>
+
+            <section class="rev-form">
+                <div class="text">
+                    <h1>予約/Reservation</h1>
+                    <h2>以下のフォームに回答してください。</h2>
+                    <h2>Please fill out the form below.</h2>
+                </div>
+                <form method="POST" action="/submit">
+                    <div class="form-item">
+                        <label for="name"><p>氏名/Name</p></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="school"><p>所属/School</p></label>
+                        <input type="text" id="school" name="school" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="year"><p>学年/School year</p></label>
+                        <input type="text" id="year" name="year">
+                    </div>
+                    <div class="form-item">
+                        <label for="mail"><p>メール/Mail</p></label>
+                        <input type="text" id="mail" name="mail" required>
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" value="予約する/Reserve">
+                    </div>
+                </form>
+            </section>
+
+            <section class="prof">
+                <div class="title">
+                    <h2 style="margin-bottom: 10px;">建築家/Architect</h2>
+                    <h1>西沢立衛</h1>
+                    <h2>Nishizawa Ryue</h2>
+                </div>
+                <div class="content">
+                    <img src="img/pic1.jpg">
+                    <div class="text">
+                        <p>1988 年横浜国立大学工学部建築学科卒業。1990 年横浜国立大学大学院工学研究科計画建設学専攻修士課程修了。1995 年に妹島和世と共に ( 有 )SANAA を設立。</p>
+                        <p>1997 年に ( 有 ) 西沢立衛建築設計事務所を設立。現在、日本建築学会賞作品部門審査員、横浜国立大学大学院 Y-GSA 教授。</p>
+                        <p class="symbol">受賞 村野藤吾賞、日本建築学会賞作品賞「豊島美術館」(2012)、プリツカー賞 (2010)、日本建築学会賞作品賞「金沢 21 世紀美術館」(2006)、第 46 回毎日芸術賞「金沢 21 世紀美術館」(2005) ほか</p>
+                        <p class="symbol">主な作品「十和田市現代美術館」「House A」「軽井沢千住博美術館」ほか</p>
+                        <p class="symbol">著書「美術館をめぐる対話」「トウキョウ・メタボライジング」ほか</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="history">
+                <div class="title">
+                    <h2 style="margin-bottom: 10px;">plustic講演会</h2>
+                    <h1>過去講演者</h1>
+                </div>
+                <div class="content">
+                    <div class="item">
+                        <h1>第1回 2015年</h1>
+                        <div class="text">
+                            <h1>淵上正幸先生</h1>
+                            <div style="text-align: left;">
+                                <p>普段目にすることのない海外建築のお話しで、会場の興味を引き付け私たちの行動を促すようなお話をしていただけました。 親睦会では皆が淵上さんに対し講演会の最中とはまた違った雰囲気の中で質問を行い、私たちに建築ジャーナリストという目線から建築家に対する考えを教えていただきました。この講演会での経験は私たちの考え方の幅を広げていただけたと実感しております。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>第2回 2016年</h1>
+                        <div class="text">
+                            <h1>山梨知彦先生</h1>
+                            <div style="text-align: left;">
+                                <p>講演会では山梨様の学生時代のお話から、コンピュテーションナショナルデザインなどの現在行っているお仕事の手法や考え方までをお話いただき、東海学生200人を超える参加者が有意義な時間を過ごすことができました。また、現在の学生時代の卒業設計や修士設計が自身の学生時代とどのように異なり、どのような可能性が秘められているかをご教授していもらい、卒業設計や修士設計の可能性を改めて実感することができました。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>第3回 2017年</h1>
+                        <div class="text">
+                            <h1>谷尻誠先生</h1>
+                            <div style="text-align: left;">
+                                <p>講演会には、定員250人を超える300人強の方が来場されました。学生へ向けて、自身の実施コンペティションでの貴重な体験を踏まえて、熱いメッセージを頂きました。どのように考えてどのように表現するか、自分がなにをどうしたいのかを大事にして過ごしてほしい、と今後私達が生きていく上で心に残るようなメッセージを頂き、会場から熱い眼差しと拍手が沸き起こりました。盛大かつ有意義な講演会となりました。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>第4回 2018年</h1>
+                        <div class="text">
+                            <h1>妹島和世先生</h1>
+                            <div style="text-align: left;">
+                                <p>講演会では妹島様の学生時代のお話から、様々な過去のプロジェクトを見ながら当時考えていらっしゃったことをお話いただきました。未だに自作から課題を見つけ出し、挑戦し続け、真摯に建築に向き合っている姿は私たち学生がこれから建築に携わっていく上で、とても貴重な経験となりました。そして第4回を迎えた講演会過去最多となる東海学生400人を超える参加者が有意義な時間を過ごすことができました。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h1>第5回 2019年</h1>
+                        <div class="text">
+                            <h1>山本理顕先生</h1>
+                            <div style="text-align: left;">
+                                <p>講演会では山本様の地域社会圏についてや、過去のプロジェクトを通じて共有してお考えになったこと、また国内外のプロジェクトを通して何を大切にされているかを中心にお話いただきました。第5回を迎えた本講演会は立ち見が出るほどの満員で、熱気に包まれた会場は東海圏の学生からの地元建築家まで幅広い方が有意義な時間を過ごすことができました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <h1>Plusticについて</h1>
+                <div style="font-size: 13px;">
+                    <p class="symbol">概要</p>
+                    <p>愛知県を中心とし、近隣の建築学生の学生をはじめ建築関係の会社、建築家が日本や世界に触れ、様々なジャンルの発見や勉強のきっかけとなるレクチャーやワークショップなど併用した企画を 開催する。以下を目的とする。</p>
+                    <ol　type="1">
+                        <li>大学内だけで留まることなく、外部への視野を広げるきっかけを担う。</li>
+                        <li>建築という分野で様々な講演を聴講することで、今後の学生に多様性のある建築のあり方を思索させる。</li>
+                        <li>Plustic は他大学や社会との結節点として東海地方での交流やインスタレーションなどさらなるプロジェクトを生み出し、やがて世界へ発信する拠点としていく。</li>
+                        <li>学生主体で企画を接続していくことで、社会進出への基礎を学びながら、東海地方全体での学生の意欲を向上させる。</li>
+                    </ol>
+                </div>
+                <div style="font-size: 13px;">
+                    <p class="symbol">企画内容</p>
+                    <p>愛知工業大学、名古屋工業大学、愛知産業大学、大同大学、名古屋造形大学で執り行う当企画は今年で6回目となる。建築学生はこれから建築業界に関わる一員として、現在活動されている建築 家の声に積極的に耳を傾けるとともに、社会の流れと建築の関係について考え、能動的に語り合っていくべきである。</p>
+                </div>
+            </section>
+
+        </main>
+        <nav></nav>
+        <aside></aside>
+
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="img/footer/logo1.png" height="20">
+            <img src="img/footer/logo2.png" height="20">
+            <img src="img/footer/logo3.png" height="20">
+        </div> 
+        <div>
+            <p>協賛企業:総合資格学院|シービーリサーチ|生和コーポレーション</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        /*import smoothscroll from '/node_modules/smoothscroll-polyfill';
+        smoothscroll.polyfill();*/
+        document.addEventListener("click", e => {
+            const target = e.target;
+            // clickした要素がclass属性、js-smooth-scrollを含まない場合は処理を中断
+            if (!target.classList.contains("page-type")) return;
+            e.preventDefault();
+            const targetId = target.hash;
+            const targetElement = document.querySelector(targetId);
+            // 画面上部から要素までの距離
+            const rectTop = targetElement.getBoundingClientRect().top;
+            // 現在のスクロール距離
+            const offsetTop = window.pageYOffset;
+            // スクロール位置に持たせるバッファ
+            const buffer = 50;
+            const top = rectTop + offsetTop - buffer;
+
+            window.scrollTo({
+                top,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
 </html>
